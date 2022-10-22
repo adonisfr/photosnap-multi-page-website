@@ -1,0 +1,86 @@
+
+.sArticle{
+    position: relative;
+    height: 375px;
+    z-index: -1;
+}
+
+.sContentArea{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 32px 40px 33px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.sDate{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sTitle{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sAuthor{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.storieHr{
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.sLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sTextLink{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.sArrow{
+    position: relative;
+    height: 12px;
+    width: 42px;
+}
+
+
+@media (min-width: 768px) {
+    .sArticle{
+        height: 500px;
+    }
+}
+
+@media (min-width: 1024px) {
+   
+}
+
+@media (min-width: 1280px) {
+   
+}

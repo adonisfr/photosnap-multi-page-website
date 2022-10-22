@@ -1,9 +1,17 @@
 import Link from "next/link";
-import style from "./NavBar.module.css";
+import style from "./Menu.module.css";
 
-function Menu() {
+function Menu({ footer }) {
+  console.log("navbar", Boolean(footer));
   return (
-    <ul className={style.ul}>
+    <ul className={footer ? style.ulFooter : style.ul}>
+      {footer && (
+        <li>
+          <Link href="/">
+            <a>home</a>
+          </Link>
+        </li>
+      )}
       <li>
         <Link href="/">
           <a>stories</a>

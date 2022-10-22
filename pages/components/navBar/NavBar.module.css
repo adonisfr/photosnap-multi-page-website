@@ -1,11 +1,13 @@
 .navbar{
-    position: fixed;
+    position: sticky;
     display: flex;
     justify-content: center;
     width: 100%;
+    top: 0px;
+    z-index: 1;
 }
 
-.container{
+.nbcontainer{
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -15,7 +17,6 @@
     padding: 0px 24px;
     top: 0px;
     opacity: 1;
-    z-index: 1;
 }
 
 
@@ -39,7 +40,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
     height: 253px;
     width: 100%;
     left: 0px;
@@ -57,51 +58,18 @@
     top: -253px;
 }
 
-
-.ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 0px;
-    margin-top: 30px;
-    /* justify-content: center; */
-    align-items: center;;
-}
-
-.ul li{
-    font-weight: 700;
-    font-style: normal;
-    font-size: 15px;
-    text-transform: uppercase;
-    line-height: 20px;
-    letter-spacing: 2.5px;
-    color: black;
-}
-
 .btn{
     display: none;
 }
 
 
 @media (min-width: 768px) {
-    .container{
+    .nbcontainer{
         padding: 0px 40px;
     }
 
     .menu{
         display: flex;
-    }
-
-    .ul{
-        flex-direction: row;
-        margin-top: 15px;
-    }
-
-    .ul li{
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 2px;
     }
 
     .imgMenu{
@@ -115,17 +83,11 @@
 
 
 @media (min-width: 1024px) {
-    .container{
-        padding: 0px 80px;
+    .nbcontainer{
+        padding: 0px 165px;
     }
 }
 
-@media (min-width: 1280px) {
-    .container{
-        padding: 0px 80px;
-        max-width: 1440px;
-    }
-}
 
 
 

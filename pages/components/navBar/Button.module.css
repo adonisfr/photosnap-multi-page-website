@@ -10,7 +10,8 @@
     letter-spacing: 2.5px;
     text-transform: uppercase;
     height: 48px;
-    width: 310px;
+    width: 100%;
+    border: 0px;
 }
 
 @media (min-width: 768px) {

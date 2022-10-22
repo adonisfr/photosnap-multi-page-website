@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import BtnGetInvite from "./btnGetInvite";
 import style from "./NavBar.module.css";
-import Menu from "./menu";
+import Menu from "../menu/menu";
 
 function Drawer() {
   const [toggle, setToggle] = useState(false);
@@ -19,7 +19,6 @@ function Drawer() {
       >
         <Image src={icon} alt="menu" layout="fill" />
       </div>
-      {/* {toggle && ( */}
       <div
         className={`${style.drawer} ${
           toggle ? style.drawerShow : style.drawerHidden
@@ -31,7 +30,6 @@ function Drawer() {
         </div>
         <BtnGetInvite />
       </div>
-      {/* )} */}
     </>
   );
 }

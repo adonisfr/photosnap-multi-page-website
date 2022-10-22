@@ -1,0 +1,120 @@
+.section{
+    padding: 72px 24px 72px 33px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.dark .section{
+    background-color: black;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dark .article{
+    color: white;
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    margin-bottom: 0px;
+}
+
+.publication{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.date{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: rgba(252, 245, 245,0.75);
+}
+
+.author{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.content{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.dark .content{
+    color: rgba(252, 245, 245,0.6);
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.textLink{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+
+}
+
+.arrow{
+    position: relative;
+    height: 12px;
+    width: 42px;
+}
+
+
+@media (min-width: 768px) {
+    .section{
+        padding: 0px 54px 0px 54px;
+        width: 495px;
+    }
+
+    .title{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.16667px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .section{
+        padding: 0px 111px 0px 111px;
+        width: 610px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section{
+        width: 810px;
+    }
+}

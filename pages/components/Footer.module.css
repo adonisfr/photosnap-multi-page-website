@@ -1,0 +1,152 @@
+
+.footer{
+    display: flex;
+    background-color: black;
+    padding-top: 56px;
+}
+
+.footerContainer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    'logo'
+    'social'
+    'menu'
+    'invite'
+    'copyRight'
+    ;
+    height: 539px;
+    width: 100%;
+    align-items: center;
+}
+
+.footerLogo{
+    grid-area: logo;
+    position: relative;
+    height: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footerMenu{
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    grid-area: social;
+    width: 154px;
+    margin: 0px auto;
+}
+
+.inviteLink{
+    grid-area: invite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    gap: 20px;
+}
+
+.inviteLink a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.inviteLink div:hover{
+    cursor: pointer;
+}
+
+.copyRight{
+    grid-area: copyRight;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    mix-blend-mode: normal;
+    color: rgba(254, 254, 254, 0.5);
+    text-align: center;
+}
+
+
+@media (min-width: 768px) {
+    .footerContainer{
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 0.6fr 0.8fr 1fr;
+        grid-template-areas: 
+        'logo invite'
+        'menu menu'
+        'social copyRight'
+        ;
+        height: 284px;
+        padding: 0px 33px;
+    }
+
+    .footerLogo{
+        justify-content: start;
+    }
+
+    .footerMenu{
+        height: 100%;
+        justify-content: left;
+        align-items: start;
+    }
+
+    .social{
+        margin-left: 0px;
+    }
+
+    .inviteLink {
+        justify-content: right;
+    }
+    
+    .copyRight{
+        text-align: right;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .footerContainer{
+        grid-template-columns: 1fr 0.6fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: 
+        'logo menu invite'
+        'social menu copyRight'
+        ;
+        height: 250px;
+        padding: 0px 171px;
+    }
+
+    .footerLogo{
+        align-self: flex-start;
+        padding-top: 20px;
+    }
+
+    .social{
+        align-self: flex-start;
+        padding-top: 10px;
+    }
+
+    .inviteLink {
+        align-self: flex-start;
+    }
+    
+    .copyRight{
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 1280px) {
+    .footerContainer{
+        grid-template-columns: 0.8fr 0.6fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+    }
+}

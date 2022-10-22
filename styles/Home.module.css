@@ -1,0 +1,63 @@
+.createStories{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.createStoriesImg{
+    position: relative;
+    height: 294px;
+    width: 100%;
+    z-index: -1;
+}
+
+.beautifulStories{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.storiesContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.featuresContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 90px 20px;
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .createStories{
+        flex-direction: row;
+    }
+
+    .createStoriesImg{
+        height: 650px;
+    }
+
+    .beautifulStories{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .storiesContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .storiesContainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .featuresContainer{
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+}
