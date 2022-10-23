@@ -31,6 +31,6 @@
 
 @media (min-width: 768px) {
     .feature{
-        width: 457px;
+        max-width: 457px;
     }
 }

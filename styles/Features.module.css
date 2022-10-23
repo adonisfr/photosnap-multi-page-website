@@ -1,0 +1,54 @@
+.features{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.featuresImg{
+    position: relative;
+    height: 294px;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../public/assets/features/mobile/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionfeaturesContainer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 80px 24px;
+    gap: 40px;
+}
+
+
+@media (min-width: 768px) {
+    .features{
+        flex-direction: row;
+    }
+
+    .featuresImg{
+        height: 490px;
+        background-image: url('../public/assets/features/tablet/hero.jpg');
+    }
+
+    .sectionfeaturesContainer{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .featuresImg{
+        background-image: url('../public/assets/features/desktop/hero.jpg');
+    }
+
+    .sectionfeaturesContainer{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 20px;
+    }
+}

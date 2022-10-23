@@ -9,8 +9,8 @@ export default function Stories() {
   return (
     <div>
       <Head>
-        <title>Photosnap multi-page website</title>
-        <meta name="description" content="Photosnap multi-page website" />
+        <title>Stories</title>
+        <meta name="description" content="Stories page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main role="main">

@@ -1,0 +1,71 @@
+.beta{
+ height: 288px;
+ background-image: url('../../../public/assets/shared/mobile/bg-beta.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ padding: 40px 32px 104px 33px;
+ display: grid;
+ grid-template-columns: 1fr;
+}
+
+.bcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px
+}
+
+.beta h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.beta h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+}
+
+.bArrow{
+    position: relative;
+    height: 12px;
+    width: 46px;
+}
+
+@media (min-width: 768px) {
+    .beta{
+        height: 280px;
+        background-image: url('../../../public/assets/shared/tablet/bg-beta.jpg');
+        padding: 40px 32px 104px 33px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .beta h1{
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 4.16667pxpx;
+        text-transform: uppercase;
+        width: 400px;
+    }
+
+    .beta > div{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .beta{
+        height: 280px;
+        background-image: url('../../../public/assets/shared/desktop/bg-beta.jpg');
+        padding: 68px 165px;
+    }
+}

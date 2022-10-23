@@ -18,12 +18,12 @@ function Menu({ footer }) {
         </Link>
       </li>
       <li>
-        <Link href="/">
+        <Link href="/features">
           <a>features</a>
         </Link>
       </li>
       <li>
-        <Link href="/">
+        <Link href="/pricing">
           <a>pricing</a>
         </Link>
       </li>
