@@ -9,6 +9,10 @@
     background-color: black;
 }
 
+.customDark .section{
+    background-color: black;
+}
+
 .article{
     display: flex;
     flex-direction: column;
@@ -16,6 +20,10 @@
 }
 
 .dark .article{
+    color: white;
+}
+
+.customDark .article{
     color: white;
 }
 
@@ -69,6 +77,10 @@
     color: rgba(252, 245, 245,0.6);
 }
 
+.customDark .content{
+    color: rgba(252, 245, 245,0.6);
+}
+
 .link{
     display: flex;
     flex-direction: row;
@@ -95,6 +107,10 @@
     .section{
         padding: 0px 54px 0px 54px;
         width: 495px;
+    }
+
+    .customDark .section{
+        background-color: transparent;
     }
 
     .title{

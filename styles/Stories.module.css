@@ -1,0 +1,30 @@
+.presentationStorie{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.presentationStoriesImg{
+    position: relative;
+    height: 294px;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+@media (min-width: 768px) {
+    .presentationStorie{
+       background-image: url('../public/assets/stories/tablet/moon-of-appalacia.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 650px;
+       justify-content: center;
+    }
+
+    .presentationStoriesImg{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+}

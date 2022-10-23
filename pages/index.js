@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Feature from "./components/features";
-import NavBar from "./components/navBar/navbar";
 import PresentationCard from "./components/presetntationCard";
 import StorieCard from "./components/storieCard";
 
@@ -15,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main role="main" className={styles.main}>
+      <main role="main">
         <div className={styles.createStories}>
           <PresentationCard
             title="Create and share your photo stories. "

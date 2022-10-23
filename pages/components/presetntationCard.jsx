@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./PresentationCard.module.css";
+
 function PresentationCard({
   subtitle,
   title,
@@ -9,9 +10,18 @@ function PresentationCard({
   link,
   textLink,
   dark,
+  customDark,
 }) {
+  let theme = "";
+  if (dark) {
+    theme = styles.dark;
+  }
+  if (customDark) {
+    theme = styles.customDark;
+  }
+
   return (
-    <div className={dark ? styles.dark : ""}>
+    <div className={theme}>
       <section className={styles.section}>
         <article className={styles.article}>
           {subtitle && <h3 className={styles.subtitle}>{subtitle}</h3>}
@@ -30,7 +40,7 @@ function PresentationCard({
                 <div className={styles.arrow}>
                   <Image
                     src={
-                      dark
+                      dark || customDark
                         ? "/assets/shared/desktop/arrow1.svg"
                         : "/assets/shared/desktop/arrow.svg"
                     }

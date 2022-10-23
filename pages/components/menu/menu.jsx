@@ -13,7 +13,7 @@ function Menu({ footer }) {
         </li>
       )}
       <li>
-        <Link href="/">
+        <Link href="/stories">
           <a>stories</a>
         </Link>
       </li>
