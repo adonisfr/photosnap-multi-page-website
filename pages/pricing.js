@@ -2,7 +2,7 @@ import Head from "next/head";
 import PresentationAndImg from "./components/presentationCardImg/presentationAndImg";
 import Price from "./components/price/price";
 import styles from "../styles/Pricing.module.css";
-import { Beta } from "./components/beta/beta";
+import Beta from "./components/beta/beta";
 import Compare from "./components/compare/compare";
 
 export default function Pricing() {

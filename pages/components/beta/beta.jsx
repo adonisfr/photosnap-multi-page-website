@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Beta.module.css";
-export function Beta() {
+function Beta() {
   return (
     <div className={styles.beta}>
       <h1>We’re in beta. Get your invite today!</h1>
@@ -24,3 +24,5 @@ export function Beta() {
     </div>
   );
 }
+
+export default Beta;

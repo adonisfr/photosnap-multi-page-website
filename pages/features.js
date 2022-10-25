@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Features.module.css";
-import { Beta } from "./components/beta/beta";
+import Beta from "./components/beta/beta";
 import Feature from "./components/feature/features";
 import PresentationCard from "./components/presetntationCard";
 
