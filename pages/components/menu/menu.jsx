@@ -2,7 +2,6 @@ import Link from "next/link";
 import style from "./Menu.module.css";
 
 function Menu({ footer }) {
-  console.log("navbar", Boolean(footer));
   return (
     <ul className={footer ? style.ulFooter : style.ul}>
       {footer && (

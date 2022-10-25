@@ -23,3 +23,11 @@
         letter-spacing: 2px;
     }
 }
+
+@media (min-width: 1024px) {
+    .btnGetInvite:hover{
+       background-color: #DFDFDF;
+       color: black;
+       cursor: pointer;
+    }
+}

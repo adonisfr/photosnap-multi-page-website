@@ -9,7 +9,11 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerLogo}>
-          <Logo color="white" />
+          <Link href="/">
+            <a>
+              <Logo color="white" />
+            </a>
+          </Link>
         </div>
         <div className={styles.footerMenu}>
           <Menu footer />

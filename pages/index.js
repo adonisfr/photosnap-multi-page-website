@@ -102,13 +102,13 @@ export default function Home() {
             image="/assets/features/desktop/responsive.svg"
           />
           <Feature
-            title="100% Responsive"
-            description="No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
+            title="No Photo Upload Limit"
+            description="Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go."
             image="/assets/features/desktop/no-limit.svg"
           />
           <Feature
-            title="100% Responsive"
-            description="No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen."
+            title="Available to Embed"
+            description="Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more."
             image="/assets/features/desktop/embed.svg"
           />
         </section>

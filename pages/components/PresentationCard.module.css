@@ -81,11 +81,12 @@
     color: rgba(252, 245, 245,0.6);
 }
 
-.link{
+.link a{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    width: 210px;
 }
 
 .textLink{
@@ -93,7 +94,6 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;
-
 }
 
 .arrow{
@@ -126,6 +126,10 @@
     .section{
         padding: 0px 111px 0px 111px;
         width: 610px;
+    }
+
+    .link a:hover{
+        text-decoration: underline;
     }
 }
 

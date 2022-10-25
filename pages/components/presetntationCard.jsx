@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./PresentationCard.module.css";
 
 function PresentationCard({
@@ -34,22 +35,24 @@ function PresentationCard({
           ) : null}
           {content && <h1 className={styles.content}>{content}</h1>}
           {textLink && (
-            <a href={link}>
-              <div className={styles.link}>
-                <h3 className={styles.textLink}>{textLink}</h3>
-                <div className={styles.arrow}>
-                  <Image
-                    src={
-                      dark || customDark
-                        ? "/assets/shared/desktop/arrow1.svg"
-                        : "/assets/shared/desktop/arrow.svg"
-                    }
-                    alt="arrow"
-                    layout="fill"
-                  />
-                </div>
-              </div>
-            </a>
+            <div className={styles.link}>
+              <Link href={link}>
+                <a>
+                  <h3 className={styles.textLink}>{textLink}</h3>
+                  <div className={styles.arrow}>
+                    <Image
+                      src={
+                        dark || customDark
+                          ? "/assets/shared/desktop/arrow1.svg"
+                          : "/assets/shared/desktop/arrow.svg"
+                      }
+                      alt="arrow"
+                      layout="fill"
+                    />
+                  </div>
+                </a>
+              </Link>
+            </div>
           )}
         </article>
       </section>

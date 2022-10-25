@@ -138,6 +138,10 @@
     .inviteLink {
         align-self: flex-start;
     }
+
+    .inviteLink:hover {
+        text-decoration: underline;
+    }
     
     .copyRight{
         align-self: flex-start;

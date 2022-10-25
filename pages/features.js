@@ -3,6 +3,7 @@ import styles from "../styles/Features.module.css";
 import Beta from "./components/beta/beta";
 import Feature from "./components/feature/features";
 import PresentationCard from "./components/presetntationCard";
+import PresentationAndImg from "./components/presentationCardImg/presentationAndImg";
 
 export default function Features() {
   return (
@@ -13,14 +14,14 @@ export default function Features() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main role="main">
-        <div className={styles.features}>
-          <PresentationCard
-            title="FEATURES"
-            content="We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories."
-            dark
-          />
-          <div className={styles.featuresImg}></div>
-        </div>
+        <PresentationAndImg
+          title="FEATURES"
+          content="We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories."
+          dark
+          mobileBg="/assets/features/mobile/hero.jpg"
+          tabletBg="/assets/features/tablet/hero.jpg"
+          desktopBg="/assets/features/desktop/hero.jpg"
+        />
         <section className={styles.sectionfeaturesContainer}>
           <Feature
             title="100% Responsive"
