@@ -1,0 +1,148 @@
+
+.priceWraper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'title'
+    'description'
+    'price'
+    'button'
+    ;
+    justify-items: center;
+    height: 407px;
+    width: 318px;
+    background-color: #F5F5F5;
+    padding: 56px 22px 20px 21px;
+    gap: 10px;
+}
+
+.black .priceWraper{
+    background-color: black;
+}
+
+.priceWraper h2{
+    grid-area: title;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: black;
+    text-align: center;
+}
+
+.black .priceWraper h2{
+    color: white;
+}
+
+.priceWraper p{
+    grid-area: description;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.black .priceWraper p {
+    color: rgba(254, 254, 254, 0.6);
+}
+
+.priceWraper div{
+    grid-area: price;
+    display: flex;
+    flex-direction: column;
+}
+
+.priceWraper div b{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 4.16667px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.black .priceWraper div b{
+    color: white;
+}
+
+.priceWraper div span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.black .priceWraper div span{
+    color: rgba(254, 254, 254, 0.6);
+}
+
+.priceWraper button{
+    grid-area: button;
+    height: 40px;
+    width: 245px;
+    background-color: black;
+    color: white;
+    border: 0px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.black .priceWraper button{
+    background-color: white;
+    color: black;
+}
+
+@media (min-width: 768px) {
+   .priceWraper{
+        height: 279px;
+        width: 689px;
+        padding: 15px 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'title price'
+        'description price'
+        'button price'
+        ;
+        justify-items: left;
+   }
+
+   .priceWraper h2{
+        text-align: left;
+    }
+
+    .priceWraper div{
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .priceWraper p{
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .priceWraper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'title'
+        'description'
+        'price'
+        'button'
+        ;
+        justify-items: center;
+        height: 407px;
+        width: 318px;
+        background-color: #F5F5F5;
+        padding: 56px 22px 20px 21px;
+        gap: 10px;
+    }
+}

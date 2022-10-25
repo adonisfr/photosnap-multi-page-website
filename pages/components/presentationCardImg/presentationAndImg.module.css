@@ -1,0 +1,32 @@
+.presentationCardImg{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.presentationImg{
+    position: relative;
+    height: 294px;
+    width: 100%;
+    z-index: -1;
+    background-image: var(--mobileBg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+    .presentationCardImg{
+        flex-direction: row;
+    }
+
+    .presentationImg{
+        height: 490px;
+        background-image: var(--tabletBg);
+    }
+}
+
+@media (min-width: 1024px) {
+    .presentationImg{
+        background-image: var(--desktopBg);
+    }
+}
