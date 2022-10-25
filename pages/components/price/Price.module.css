@@ -1,5 +1,10 @@
+.priceWraperContainer{
+    position: relative;
+    --height:407px
+}
 
 .priceWraper{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -15,6 +20,15 @@
     background-color: #F5F5F5;
     padding: 56px 22px 20px 21px;
     gap: 10px;
+}
+
+.priceWraperGradient{
+    background: rgb(222,223,19);
+    position: absolute;
+    top: 0px;
+    height: 6px;
+    width: 100%;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 }
 
 .black .priceWraper{
@@ -113,6 +127,11 @@
         justify-items: left;
    }
 
+   .priceWraperGradient{
+        height: 279px;
+        width: 6px;
+    }
+
    .priceWraper h2{
         text-align: left;
     }
@@ -139,11 +158,24 @@
         'button'
         ;
         justify-items: center;
-        height: 407px;
+        height: var(--height);
         width: 318px;
         background-color: #F5F5F5;
         padding: 56px 22px 20px 21px;
-        gap: 10px;
+    }
+
+    .priceWraper div{
+        align-items: center;
+        width: 100%;
+    }
+
+    .priceWraper p{
+        text-align: center;
+    }
+
+    .priceWraperGradient{
+        height: 6px;
+        width: 100%;
     }
 
     .priceWraper button:hover{

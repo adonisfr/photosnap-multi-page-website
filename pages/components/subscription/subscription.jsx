@@ -43,6 +43,7 @@ export default function Subscription() {
           price={`$${monthlySubscription ? "39.00" : "390.00"}`}
           monthly={monthlySubscription}
           black
+          main
         />
         <Price
           title="Busines"
