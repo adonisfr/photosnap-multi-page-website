@@ -1,0 +1,74 @@
+.subscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin: 40px;
+  }
+
+  .subscription span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .subscriptionSpanBlack{
+    color: black !important;
+  }
+  
+  .btnSubscription{
+      height: 32px;
+      width: 64px;
+      background-color: #DFDFDF;
+      border-radius: 50px;
+  }
+
+  .btnBlack{
+    background-color: black;
+  }
+  
+  .btnInside{
+      height: 24px;
+      width: 24px;
+      border-radius: 50px;
+  }
+
+  .btnInsideLeft{
+    background-color: black;
+    margin-top: 4px;
+    margin-left: 3px;
+  }
+  .btnInsideRight{
+    background-color: #DFDFDF;
+    margin-top: 4px;
+    margin-right: 3px;
+    float: right;
+  }
+  
+  
+  .pricingContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      gap: 25px;
+  }
+  
+  
+  @media (min-width: 768px) {
+     
+  }
+  
+  @media (min-width: 1024px) {
+      .pricingContainer{
+          flex-direction: row;
+          justify-content: center;
+      }
+
+      .btnSubscription:hover{
+        cursor: pointer;
+      }
+  }

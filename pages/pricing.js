@@ -1,9 +1,8 @@
 import Head from "next/head";
 import PresentationAndImg from "./components/presentationCardImg/presentationAndImg";
-import Price from "./components/price/price";
-import styles from "../styles/Pricing.module.css";
 import Beta from "./components/beta/beta";
 import Compare from "./components/compare/compare";
+import Subscription from "./components/subscription/subscription";
 
 export default function Pricing() {
   return (
@@ -22,34 +21,7 @@ export default function Pricing() {
           tabletBg="/assets/pricing/tablet/hero.jpg"
           desktopBg="/assets/pricing/desktop/hero.jpg"
         />
-        <div className={styles.subscription}>
-          <span>Monthly</span>
-          <div className={styles.btnSubscription}>
-            <div className={styles.btnInside}></div>
-          </div>
-          <span>Yearly</span>
-        </div>
-        <section className={styles.pricingContainer}>
-          <Price
-            title="Basic"
-            description="Includes basic usage of our platform. Recommended for new and aspiring photographers."
-            price="$19.00"
-            monthly
-          />
-          <Price
-            title="Pro"
-            description="More advanced features available. Recommended for photography veterans and professionals."
-            price="$39.00"
-            monthly
-            black
-          />
-          <Price
-            title="Busines"
-            description="Additional features available such as more detailed metrics. Recommended for business owners."
-            price="$99.00"
-            monthly
-          />
-        </section>
+        <Subscription />
         <Compare />
         <Beta />
       </main>
