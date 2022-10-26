@@ -37,6 +37,7 @@ export default function Home() {
             content="We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone."
             link="#"
             textLink="VIEW THE STORIES"
+            hideGradient
           />
           <div className={styles.createStoriesImg}>
             <Image
@@ -52,6 +53,7 @@ export default function Home() {
             content="Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it. "
             link="#"
             textLink="VIEW THE STORIES"
+            hideGradient
           />
           <div className={styles.createStoriesImg}>
             <Image

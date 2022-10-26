@@ -1,8 +1,18 @@
 .section{
+    position: relative;
     padding: 72px 24px 72px 33px;
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.sectionGradient{
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    height: 6px;
+    width: 128px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
 }
 
 .dark .section{
@@ -107,6 +117,13 @@
     .section{
         padding: 0px 54px 0px 54px;
         width: 495px;
+    }
+
+    .sectionGradient{
+        left: 0px;
+        height: 45%;
+        width: 6px;
+        top: auto;
     }
 
     .customDark .section{

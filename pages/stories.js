@@ -24,6 +24,7 @@ export default function Stories() {
             date="March 2nd 2020"
             author="by John Appleseed"
             customDark
+            hideGradient
           />
           <div className={styles.presentationStoriesImg}>
             <Image

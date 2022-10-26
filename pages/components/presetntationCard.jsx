@@ -12,6 +12,7 @@ function PresentationCard({
   textLink,
   dark,
   customDark,
+  hideGradient,
 }) {
   let theme = "";
   if (dark) {
@@ -54,6 +55,7 @@ function PresentationCard({
               </Link>
             </div>
           )}
+          {hideGradient ? "" : <div className={styles.sectionGradient}></div>}
         </article>
       </section>
     </div>
