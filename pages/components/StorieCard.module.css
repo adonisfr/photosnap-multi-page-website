@@ -2,7 +2,6 @@
 .sArticle{
     position: relative;
     height: 375px;
-    z-index: -1;
 }
 
 .sContentArea{
@@ -75,12 +74,4 @@
     .sArticle{
         height: 500px;
     }
-}
-
-@media (min-width: 1024px) {
-   
-}
-
-@media (min-width: 1280px) {
-   
 }
